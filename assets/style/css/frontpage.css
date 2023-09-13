@@ -10191,9 +10191,6 @@ input:focus {
   .main-specialSec .reward-formSec {
     padding: 210px 0 110px;
   }
-  .main-specialSec .reward-formSec .rwdRow {
-    align-items: initial;
-  }
   .main-specialSec .reward-formSec .rwdRow [class*=col-].imgCard {
     display: none;
   }
