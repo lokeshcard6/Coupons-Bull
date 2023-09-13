@@ -6,7 +6,7 @@
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #F1460C;
-  --bs-yellow: #ffc107;
+  --bs-yellow: #fed700;
   --bs-green: #017655;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -10020,6 +10020,92 @@ input:focus {
   line-height: 16px;
 }
 
+.main-header {
+  background-color: #017655;
+  padding: 16.5px 15px 0;
+}
+.main-header .header-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.main-header .header-row .header-logo {
+  margin-right: 45px;
+}
+.main-header .header-row .header-logo a {
+  display: inline-block;
+}
+.main-header .header-row .header-logo a img {
+  max-width: 165px;
+}
+.main-header .header-row .main-menu .menu-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.main-header .header-row .main-menu .menu-list .menu-item {
+  display: inline-block;
+  padding-bottom: 17px;
+}
+.main-header .header-row .main-menu .menu-list .menu-item > .menu-link {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  padding: 12px 10px 12px;
+  border-radius: 30px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-header .header-row .main-menu .menu-list .menu-item > .menu-link span {
+  display: inline-block;
+}
+.main-header .header-row .main-menu .menu-list .menu-item:hover .menu-link {
+  background-color: rgba(12, 12, 12, 0.27);
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .menu-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px 12px 16px;
+  position: relative;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .menu-link span {
+  display: inline-block;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .menu-link i {
+  font-size: 10px;
+  margin-top: 2px;
+  position: absolute;
+  right: 12px;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .dropdown-menu {
+  border-radius: 0px;
+  margin-top: 16px;
+  padding: 7px;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .dropdown-menu li a {
+  font-size: 13px;
+  line-height: 16px;
+  padding: 12px 30px 12px 16px;
+  color: #000;
+  border-bottom: 1px solid #f2f2f2;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .dropdown-menu li a:hover {
+  background-color: transparent;
+  color: #0062bd;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown .dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+.main-header .header-row .main-menu .menu-list .menu-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .main-specialSec {
   background-color: #017655;
 }
@@ -10187,7 +10273,41 @@ input:focus {
   color: #FFBC02;
 }
 
+.main-footer {
+  padding: 45px 0 30px;
+  border-bottom: 20px solid #fed700;
+}
+.main-footer .footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.main-footer .footer-menu li {
+  display: inline-block;
+}
+.main-footer .footer-menu li a {
+  color: #838383;
+  font-size: 0.75rem;
+  line-height: 14px;
+  font-weight: 500;
+  padding: 3px 0;
+}
+.main-footer p {
+  color: rgb(79, 79, 79);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 1024px) {
+  .main-specialSec.thankYou-sec {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .main-specialSec .reward-formSec {
     padding: 210px 0 110px;
   }
@@ -10202,7 +10322,9 @@ input:focus {
     max-width: 100%;
   }
   .main-specialSec .reward-formSec .rwdRow [class*=col-].formCard .right-form.successForm .card .card-body .mystry-imgSec {
-    width: 100%;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-right: 25px;
   }
   .main-specialSec .reward-formSec .rwdRow [class*=col-].formCard .right-form .card {
     overflow: visible;
@@ -10262,6 +10384,12 @@ input:focus {
   }
   .main-specialSec .reward-formSec .rwdRow [class*=col-].formCard .right-form .card .card-body .mystry-imgSec .reward-boxTv {
     margin-top: -90px;
+  }
+  .main-specialSec .reward-formSec .rwdRow [class*=col-].formCard .right-form.successForm .card .card-body .mystry-imgSec {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -110px;
   }
   .main-specialSec .reward-footer {
     padding-bottom: 10px;

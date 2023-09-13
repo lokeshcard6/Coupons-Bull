@@ -1,5 +1,11 @@
 @media only screen and (max-width:1024px) {
     .main-specialSec {
+        &.thankYou-sec{
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
         .reward-formSec {
             padding: 210px 0 110px;
 
@@ -19,7 +25,9 @@
                                 .card{
                                     .card-body{
                                         .mystry-imgSec {
-                                            width:100%;
+                                            width: calc(100% + 50px);
+                                            margin-left: -25px;
+                                            margin-right: 25px;
                                         }
                                     } 
                                 } 
@@ -141,6 +149,18 @@
                                     }
                                 }
                             }
+                            &.successForm{
+                                .card{
+                                    .card-body{
+                                        .mystry-imgSec {
+                                            width:100%;
+                                            margin-left: 0;
+                                            margin-right:0;
+                                            margin-top: -110px;
+                                        }
+                                    } 
+                                } 
+                            } 
                         }
                     }
                 }
