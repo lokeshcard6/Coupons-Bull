@@ -1,0 +1,199 @@
+@import "include";
+@import "global";
+
+.main-specialSec {
+    background-color: $green;
+
+    .logo-header {
+        background-color: $black;
+        padding: 10px 15px;
+        text-align: center;
+        img{
+            width:330px;
+        }
+    }
+
+    .reward-formSec {
+        padding: 110px 0;
+        .rwdRow {
+            align-items:initial;
+            .formCard{
+                // height:100%;
+                .right-form {
+                    max-width: 592px;
+                    margin: auto;
+        
+                    .card {
+                        .card-body {
+                            position:relative;
+                            .mystry-imgSec{
+                                display:none;
+                                .my-unlock-img{
+                                    max-width:33.33%;
+                                    width:100%;
+                                    margin-top: -58px;
+                                    img{
+                                        max-width:100%;
+                                    }
+                                }
+                                .reward-boxTv{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    margin-top: -115px;
+                                    max-width:33.33%;
+                                }
+                            }
+                            .offer-validRow {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 20px;
+        
+                                h4 {
+                                    font-size: 22px;
+                                    line-height: 26px;
+                                    margin-bottom: 0;
+                                    color: $green;
+                                    font-weight: $fw-700;
+                                    margin: 0 20px 0 0;
+        
+                                    img {
+                                        width: 22px;
+                                    }
+                                }
+        
+                                .countdown-box {
+                                    display: flex;
+        
+                                    .countdown-item {
+                                        background-color: $dark-yellow;
+                                        padding: 10px;
+                                        text-align: center;
+                                        display: flex;
+                                        flex-direction: column;
+        
+                                        .countdown-time {
+                                            margin-bottom: 0;
+                                            font-size: 40px;
+                                            line-height: 40px;
+                                            color: $orange;
+                                            font-weight: $fw-700;
+                                        }
+        
+                                        span {
+                                            font-size: 12px;
+                                            line-height: 12px;
+                                            font-weight: $fw-700;
+                                            color: $black-1e;
+                                            display: inline-block;
+                                        }
+        
+                                        &:first-child {
+                                            border-radius: 10px 0 0 10px;
+                                        }
+        
+                                        &:last-child {
+                                            border-radius: 0 10px 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .claim-h1 {
+                                text-align: center;
+                                font-size: 36px;
+                                line-height: 42px;
+                                font-weight: $fw-700;
+                                margin-bottom: 40px;
+        
+                                span {
+                                    color: $green;
+                                }
+                            }
+        
+                            h3 {
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: $fw-700;
+                                text-align: center;
+                                margin-bottom: 20px;
+        
+                                span {
+                                    border-bottom: 7px solid $dark-yellow;
+                                    display: inline-block;
+                                }
+        
+                                img {
+                                    width: 22px;
+                                }
+                            }
+        
+                            .downArrow {
+                                text-align: center;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    &.successForm{
+                        height:100%;
+                        .card{
+                            height:100%;
+                            .card-body{
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                flex-direction:column;
+                                .thankYou-h1{
+                                    font-size:36px;
+                                    line-height:40px;
+                                    font-weight:$fw-700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .reward-footer {
+        text-align: center;
+        padding-bottom: 40px;
+        .container{
+            max-width:1465px;
+        }
+        .inner-rwd {
+            max-width: 70%;
+            margin: 0 auto;
+
+            .newsletterTxt {
+                margin-bottom: 20px;
+                color: $white;
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: $fw-400;
+
+                img {
+                    width: 16px;
+                }
+            }
+
+            .copyTxt {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                color: $white;
+                line-height: 19px;
+                margin-bottom: 0;
+
+                span {
+                    color: $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+@import "responsive";
