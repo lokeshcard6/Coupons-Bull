@@ -1,16 +1,31 @@
+@media only screen and (max-width:1200px) {
+    .main-header {
+        .header-row {
+            .header-logo {
+                margin-right: 25px;
+            }
+
+            .header-search {
+                max-width: 240px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:1024px) {
     .main-specialSec {
-        &.thankYou-sec{
-            height:100vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:space-between;
+        &.thankYou-sec {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
+
         .reward-formSec {
             padding: 210px 0 110px;
 
             .rwdRow {
-                
+
                 [class*=col-] {
                     &.imgCard {
                         display: none;
@@ -18,20 +33,23 @@
 
                     &.formCard {
                         width: 100%;
-                        height:100%; 
+                        height: 100%;
+
                         .right-form {
                             max-width: 100%;
-                            &.successForm{
-                                .card{
-                                    .card-body{
+
+                            &.successForm {
+                                .card {
+                                    .card-body {
                                         .mystry-imgSec {
                                             width: calc(100% + 50px);
                                             margin-left: -25px;
                                             margin-right: 25px;
                                         }
-                                    } 
-                                } 
+                                    }
+                                }
                             }
+
                             .card {
                                 overflow: visible;
 
@@ -71,6 +89,36 @@
 }
 
 @media only screen and (max-width:991px) {
+    .main-header {
+        .header-row {
+            .header-logo {
+                padding: 21px 0;
+
+                a {
+                    img {
+                        content: url(../../images/mobile-logo.png);
+                        max-width: 85px;
+                    }
+                }
+            }
+
+            .header-search {
+                max-width: 60%;
+            }
+
+            .main-menu {
+                display: none;
+                transition: all 0.5s linear;
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+
+            .signIn-btn {
+                display: none;
+            }
+        }
+    }
+
     .main-specialSec {
         .reward-formSec {
             .container {
@@ -79,6 +127,12 @@
             }
         }
     }
+    .main-footer{
+        .footer-menu{
+            flex-wrap:wrap;
+            margin-bottom: 16px;
+        }
+    } 
 }
 
 @media only screen and (max-width:768px) {
@@ -149,18 +203,19 @@
                                     }
                                 }
                             }
-                            &.successForm{
-                                .card{
-                                    .card-body{
+
+                            &.successForm {
+                                .card {
+                                    .card-body {
                                         .mystry-imgSec {
-                                            width:100%;
+                                            width: 100%;
                                             margin-left: 0;
-                                            margin-right:0;
+                                            margin-right: 0;
                                             margin-top: -110px;
                                         }
-                                    } 
-                                } 
-                            } 
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -175,7 +230,24 @@
 }
 
 @media only screen and (max-width:600px) {
+    .main-header{
+        .header-row{
+            .header-logo{
+                margin-right:10px;
+                a{
+                    img{
+                        max-width:65px;
+                    }
+                } 
+            } 
+        } 
+    } 
     .main-specialSec {
+        .logo-header{
+            img{
+                width:220px;
+            }
+        } 
         .reward-formSec {
             .rwdRow {
                 [class*=col-] {

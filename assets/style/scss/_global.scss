@@ -218,8 +218,15 @@ body {
   &.btn-black{
     background-color:$black;
     color:$white;
-    &:hover{
+    &:hover , &:focus{
       background-color:lighten($color: $black , $amount: 12px);
+    }
+  }
+  &.btn-dark-yellow{
+    background-color:$dark-yellow;
+    color:$black;
+    &:hover , &:focus{
+      background-color:lighten($color: $dark-yellow , $amount: 12px);
     }
   }
   &:focus {
@@ -243,6 +250,7 @@ h3,
 }
 ul {
   padding: 0;
+  margin-bottom:0;
 }
 a {
   text-decoration: none;
